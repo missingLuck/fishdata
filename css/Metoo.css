@@ -1,0 +1,48 @@
+.weui-image{
+    float: left;
+    padding-left: 15px;
+    margin-bottom: 20px;
+}
+.customerImg{
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #00a4ff;
+    float: left;
+    margin-right: 15px;
+}
+.customerImg img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: inline-block;
+}
+.chatButton{
+    display: inline-block;
+    width: 280px;
+}
+.speech-bubble {
+    position: relative;
+    display: inline-block;
+    background-color: #333;
+    line-height: 32px;
+    color: white;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    font-family: sans-serif;
+    text-indent: 1.5rem;
+    text-align: center;
+    text-align-last: left;
+    z-index: 999;
+}
+.speech-bubble:after {
+    content: '&lsaquo;';
+    color:#333;
+    position: absolute;
+    left: -10px;
+    top: 5px;
+    width: 9px;
+    height: 14px;
+    border: 1px solid #f00;
+    overflow: hidden;
+}

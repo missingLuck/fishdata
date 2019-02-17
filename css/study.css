@@ -1,0 +1,339 @@
+body {
+  background-color: #f3f5f7;
+}
+header {
+  padding-top: 30px;
+  width: 1300px;
+  height: 100px;
+  margin: 0 auto;
+}
+header .logo {
+  width: 195px;
+  height: 100%;
+  float: left;
+  background: url("../images/logo.png") no-repeat;
+  /*position:center 对背景图有效*/
+}
+header .logo a {
+  display: block;
+  text-indent: -990px;
+  /*块级元素才会生效*/
+  overflow: hidden;
+}
+header nav {
+  float: left;
+  line-height: 40px;
+}
+header nav ul li {
+  margin-left: 45px;
+  font-size: 18px;
+}
+header .search {
+  height: 40px;
+  width: 410px;
+  float: left;
+  background-color: pink;
+  margin-left: 170px;
+}
+header .search input {
+  height: 40px;
+  width: 360px;
+  border: 1px solid #00a4ff;
+  padding-left: 10px;
+  float: left;
+  outline: none;
+}
+header button {
+  background-image: url("../images/fa-search.png");
+  width: 50px;
+  height: 40px;
+  float: left;
+  border: none;
+  outline: none;
+}
+header ul {
+  float: right;
+}
+nav ul li {
+  float: left;
+}
+.personal {
+  float: right;
+  font-size: 12px;
+  height: 40px;
+  width: 230px;
+}
+.personal div {
+  float: right;
+  line-height: 40px;
+  margin-left: 10px;
+}
+.personal .personal_center {
+  margin-right: 10px;
+}
+.personal .personal_tips {
+  position: relative;
+}
+.personal .personal_tips::before {
+  position: absolute;
+  content: '';
+  background-color: red;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  margin: 8px 16px;
+}
+.personal .personal_pic {
+  border-radius: 50%;
+  width: 33px;
+  height: 33px;
+  overflow: hidden;
+  margin-top: 1px;
+}
+.banner {
+  background-color: #1c036c ;
+  height: 420px;
+  width: 100%;
+}
+.banner .inner {
+  position: relative;
+  height: 420px;
+  background-image: url("../images/banner.jpg");
+}
+.banner .inner .sub_nav {
+  float: left;
+  padding-top: 10px;
+  width: 190px;
+  height: 420px;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.banner .inner .sub_nav ul li {
+  position: relative;
+  height: 40px;
+  line-height: 40px;
+  padding-left: 5px;
+}
+.banner .inner .sub_nav a {
+  font-size: 16px;
+  color: white;
+}
+.banner .inner span {
+  position: absolute;
+  right: 20px;
+}
+/*banner圆点部分*/
+.circle {
+  position: absolute;
+  width: 176px;
+  height: 20px;
+  /*background-color: white;*/
+  left: 50%;
+  transform: translate(-50%);
+  bottom: 15px;
+}
+.circle i {
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 50%;
+  margin-right: 12px;
+}
+.banner .inner .class_table {
+  float: right;
+  width: 230px;
+  height: 300px;
+  margin-top: 60px;
+}
+.inner .class_table .class_header {
+  background-color: #9bceea ;
+  height: 50px;
+  line-height: 50px;
+  font-weight: 700;
+  font-size: 18px;
+  text-align: center;
+  color: white;
+}
+.inner .class_table .class_course {
+  padding: 15px;
+  background-color: white;
+  height: 250px;
+  color: #666;
+}
+.class_table .class_course h2 {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+}
+.class_table .class_course li {
+  margin-top: 10px;
+  height: 50px;
+  border-bottom: 1px solid #ccc;
+}
+.class_table .class_course ul li:last-child {
+  border: 0;
+}
+.class_table .class_course div {
+  border: 1px solid #00a4ff;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+}
+.class_table .class_course div a {
+  color: #00a4ff;
+}
+/*精品推荐部分*/
+.recommend {
+  padding: 20px;
+  margin-top: 30px;
+  height: 60px;
+  background-color: white;
+}
+.recommend strong {
+  float: left;
+  color: #22b0ff;
+  font-size: 14px;
+  margin: 0 20px;
+  line-height: 20px;
+}
+.recommend ul {
+  /*padding: 20px;*/
+}
+.recommend li {
+  float: left;
+  font-size: 14px;
+  border-left: 1px solid black;
+  width: 80px;
+  height: 14px ;
+  text-align: center;
+}
+.recommend li:last-child {
+  border-right: 1px solid black;
+}
+.recommend .edit {
+  float: right;
+  font-size: 12px;
+}
+.product_title {
+  margin-top: 30px;
+  height: 30px;
+}
+.product_title h1 {
+  float: left;
+  font-weight: normal;
+  font-size: 18px;
+  color: #666666;
+}
+.product_title .more {
+  float: right;
+  font-weight: normal;
+  font-size: 12px;
+}
+.product_title .more:hover {
+  color: red;
+}
+.product .course {
+  text-align: justify;
+}
+.product .course:after {
+  content: '.';
+  width: 100%;
+  display: inline-block;
+  overflow: hidden;
+  height: 0;
+}
+.product .course .course_pic {
+  height: 155px;
+  width: 233px;
+}
+.product .course .course_pic img {
+  transition: all 0.4s;
+}
+.product .course .course_pic img:hover {
+  transform: translateX(-5px);
+  /*transform: translateY(-10px);*/
+}
+.product .course li {
+  width: 227px;
+  height: 270px;
+  display: inline-block;
+  background-color: #666666;
+  margin-top: 10px;
+  overflow: hidden;
+  transition: all 0.4s;
+}
+.product .course li:hover {
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+  transform: translateY(-10px);
+}
+.course .course_details {
+  height: 115px;
+  width: 100%;
+  padding: 20px;
+  background-color: white;
+}
+.course .course_details a {
+  display: block;
+  font-size: 14px;
+  padding-bottom: 25px;
+}
+.course .course_details p {
+  float: left;
+}
+.footer {
+  margin-top: 20px;
+  margin-bottom: 0;
+  height: 420px;
+  background-color: white;
+  padding-top: 20px;
+}
+.footer .footer_left {
+  float: left;
+  width: 480px;
+  padding: 20px;
+}
+.footer .footer_left .footer_logo {
+  background: url("../images/logo.png") no-repeat;
+  width: 195px;
+  height: 42px;
+  text-indent: -990px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+.footer .footer_left p {
+  font-size: 12px;
+  color: #666666;
+  line-height: 25px;
+}
+.footer .footer_left .upload {
+  width: 120px;
+  height: 35px;
+  border: 1px solid #00a4ff;
+  color: #00a4ff;
+  font-size: 12px;
+  text-align: center;
+  line-height: 35px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+.footer .footer_right {
+  margin-top: 10px;
+  float: right;
+  /*width: 470px;*/
+  height: 120px;
+}
+.footer .footer_right dl {
+  float: left;
+  margin-left: 150px;
+}
+.footer .footer_right dt {
+  font-weight: normal;
+  font-size: 14px;
+  padding-bottom: 10px;
+}
+.footer .footer_right dd {
+  display: block;
+  font-size: 12px;
+  color: #666666;
+  line-height: 18px;
+}

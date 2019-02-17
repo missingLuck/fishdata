@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>temp</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        margin: auto;
+    }
+    a{
+        text-decoration: none;
+    }
+    .box{
+        border: 1px solid #101010;
+    }
+    .left{
+        width: 300px;
+        height: 500px;
+        background-color: #00a4ff;
+        float: left;
+    }
+    .right{
+        width: 300px;
+        height: 500px;
+        background-color: #9d9d9d;
+        float: right;
+    }
+    .clearfix:after{
+        content: "";
+        display: table;
+        clear: both;
+    }
+    /*.clean{*/
+        /*clear: both;*/
+    /*}*/
+    .shake{
+        width: 150px;
+        height: 50px;
+        margin: 50px auto;
+        text-align: center;
+        line-height: 50px;
+        border: 2px solid #ccc;
+        border-radius: 8px;
+    }
+    .shake:hover{
+        animater: shake 0.8s;
+        -webkit-animation: shake 0.8s;
+        -moz-animation: 0.8s;
+        -o-animation: 0.8s;
+    }
+    @keyframes shake  {
+        10%,90%{
+            transform: translateX(-1px);
+        }20%,80%{
+            transform: translateX(2px);
+        }30%,50%,70%{
+            transform: translateX(-4px);
+        }40%,60%{
+            transform: translateX(4px);
+        }
+    }
+    .main{
+        height: 460px;
+        width: 100%;
+        background-color: #2aabd2;
+        padding-top: 10px;
+    }
+    .animated{
+        width: 150px;
+        height: 30px;
+        border: 2px solid #fff;
+        padding: 20px 40px;
+        margin: 30px auto;
+        display: block;
+        text-align: center;
+        background-color: rgba(255,255,255,.3);
+        transition: all 0.3s;
+        position: relative;
+    }
+    .animated:visited{
+        color: #fff;
+    }
+    .animated:hover{
+        color: #333;
+    }
+    .animated:after{
+        content: "";
+        position: absolute;
+        left:50%;
+        top:50%;
+        width: 100%;
+        height: 20%;
+        background-color: #fff;
+        overflow: hidden;
+    }
+</style>
+<body>
+<div class="clearfix box">
+    <div class="left"></div>
+    <div class="right"></div>
+    <!--<div class="clean"></div>-->
+</div>
+<div class="shake">
+    Hello fish
+</div>
+<div class="main">
+    <a href="" class="animated itemA">JavaScript</a>
+    <a href="" class="animated itemB">JQuery</a>
+    <a href="" class="animated itemC">H5C3</a>
+    <a href="" class="animated itemD">Node</a>
+</div>
+</body>
+</html>
