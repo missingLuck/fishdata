@@ -4,11 +4,35 @@
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
+<style>
+    .bg{
+        background-color: red;
+    }
+</style>
 <body>
 <div id="app">
-    <p>{{ message }}</p>
+    <p :class="{bg:bool}">{{ message }}</p>
+    <button @click="show">切换class</button>
 </div>
 </body>
 <script src="../js/vue.js"></script>
-<script src="vueOne.js"></script>
+<script>
+    new Vue({
+        el:"#app",
+        data:{
+            bool:false,
+            message:'Hello Vue.js!'
+        },
+        methods:{
+            show:function () {
+                if(!this.bool){
+                    this.bool = true;
+                }else{
+                    this.bool = false;
+                }
+
+            }
+        }
+    })
+</script>
 </html>
